@@ -25,7 +25,7 @@ class VideosList extends Component {
   render() {
     const { datos } = this.state;
     const videos = datos.map((video) => (
-      <Video key={video.id} data={video.attributes} />
+      <Video key={video.id} id={video.id} data={video.attributes} />
     ));
     return (
       <table>
