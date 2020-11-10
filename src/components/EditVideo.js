@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import { axios } from 'axios';
+import axios from 'axios';
 
 const EditVideo = props => {
  // const { location: { edit: { video} } } = props;
@@ -16,31 +16,30 @@ const EditVideo = props => {
   const { id } = params;
  
 
-  const submitHandler = (id, title, description, url, year, author) => {
-    // console.log(id, title, description, url, year, author)
+  const submitHandler = async (e, id, title, description, url, year, author) => {
     try {
-      axios.put(`https://videosapi-gon.herokuapp.com/api/v1/videos/${id}`,
+      await axios.patch(
+        `https://videosapi-gon.herokuapp.com/api/v1/videos/${id}`,
         {
           title,
           description,
           url,
           year,
-          author,         
-        },
+          author
+        }
       );
       window.location.reload(false);
-      //console.log(data)
       props.history.push("/");
-    } catch (error){ 
+    } catch (error) {
       console.log(error);
     }
-  }
+  };
 
 
   return (
     <div>
       <NavLink to="/">Home</NavLink>
-        <form onSubmit={submitHandler(id,title, description, url, author, year)}>
+        <form onSubmit={() => submitHandler(id,title, description, url, author, year)}>
           <label>
             Title:
             <input type="text" name="title" placeholder="title" onChange={e => setTitle(e.target.value)} />
