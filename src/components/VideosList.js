@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Video from "./Video";
+import { NavLink } from 'react-router-dom';
 
 class VideosList extends Component {
   constructor(props) {
@@ -22,22 +23,33 @@ class VideosList extends Component {
       });
   }
 
+  RegisterVideo(){
+
+  }
+
   render() {
     const { datos } = this.state;
     const videos = datos.map((video) => (
       <Video key={video.id} id={video.id} data={video.attributes} />
     ));
     return (
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Url</th>
-          </tr>
-        </thead>
-        {videos}
-      </table>
+      <div>
+        <div>
+          <button>
+             <NavLink to="new">Register New Video</NavLink>
+            </button>
+          </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Url</th>
+            </tr>
+          </thead>
+          {videos}
+        </table>
+      </div>
     );
   }
 }
