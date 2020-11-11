@@ -16,7 +16,7 @@ const EditVideo = props => {
   const { id } = params;
  
 
-  const submitHandler = async (e, id, title, description, url, year, author) => {
+  const submitHandler = async (id, title, description, url, year, author) => {
     try {
       await axios.patch(
         `https://videosapi-gon.herokuapp.com/api/v1/videos/${id}`,
@@ -25,9 +25,8 @@ const EditVideo = props => {
           description,
           url,
           year,
-          author
-        }
-      );
+          author,
+        });
       window.location.reload(false);
       props.history.push("/");
     } catch (error) {
