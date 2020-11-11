@@ -24,6 +24,7 @@ const RegisterVideo = props => {
       // props.history.push('/');
     } catch (err) {
       setError(err);
+      console.log(error)
     }
   }
   let displayError;
@@ -34,12 +35,12 @@ const RegisterVideo = props => {
     <div>
       <NavLink to="/">Home</NavLink>
       <h1>Register New Video</h1>
-      {displayError}
+      {/* {displayError} */}
       <div>
         <form onSubmit={(e) => submitHandler(e,title, description, url, author, year)}>
           <label>
             title:
-            <input type="text" name="title" onChange={e => setTitle(e.target.value)} />
+            <input type="text" name="title" onChange={e => setTitle(e.target.value)} required />
           </label>
           <label>
             Description:

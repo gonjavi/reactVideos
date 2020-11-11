@@ -41,7 +41,7 @@ const EditVideo = props => {
         <form onSubmit={() => submitHandler(id,title, description, url, author, year)}>
           <label>
             Title:
-            <input type="text" name="title" placeholder="title" onChange={e => setTitle(e.target.value)} />
+            <input type="text" name="title" placeholder="title" onChange={e => setTitle(e.target.value)} required />
           </label>
           <label>
             Description:
