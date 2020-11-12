@@ -10,7 +10,7 @@ const Video = (props) => {
   function DeleteVideo() {    
     DeleteVideoApi(id);
   } 
-  console.log(year, id, author)
+  
   return (   
       <tbody>
         <tr>
