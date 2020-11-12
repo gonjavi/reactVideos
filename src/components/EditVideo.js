@@ -8,7 +8,7 @@ const EditVideo = props => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [url, setUrl] = useState('');
-  const [year, setYear] = useState('');
+  const [year, setYear] = useState(Date);
   const [author, setAuthor] = useState('');
 
   const { match } = props;
@@ -25,9 +25,8 @@ const EditVideo = props => {
           description,
           url,
           year,
-          author,
+          author,          
         });
-      window.location.reload(false);
       props.history.push("/");
     } catch (error) {
       console.log(error);
@@ -38,7 +37,7 @@ const EditVideo = props => {
   return (
     <div>
       <NavLink to="/">Home</NavLink>
-        <form onSubmit={() => submitHandler(id,title, description, url, author, year)}>
+        <form onSubmit={(e) => submitHandler(id, title, description, url, year, author)}>
           <label>
             Title:
             <input type="text" name="title" placeholder="title" onChange={e => setTitle(e.target.value)} required />
