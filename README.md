@@ -17,6 +17,12 @@ Este es un proyecto frontend para registrar videos, utilizando React y Redux. El
 - Redux 4.0.5
 - Visual Code
 
+## Future Updates/Improvements - Futuras Actualizaciones/Mejoras
+
+Add the following characteristics:
+
+- Style the app
+
 
 ## Autor:
 👤 **Gonza Javier Mancilla**
