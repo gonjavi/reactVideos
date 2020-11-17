@@ -5,18 +5,18 @@ This is a frontend project to register videos, using React and Redux. It allows 
 Este es un proyecto frontend para registrar videos, utilizando React y Redux. El proyecto permite todas las acciones del CRUD, crear, consultar, actualizar y borrar lo relacionado con el video (titulo, descripción, url, fecha y autor).
 
 
-### Prerequisitos
+## Prerequisitos
 - npm 6.14.8
 - node 14.10.0
 
 
-## Built with  - Construido con
+## Built with  
 
 - React 17.0.1
 - Redux 4.0.5
 - Visual Code
 
-## Future Updates/Improvements - Futuras Actualizaciones/Mejoras
+## Future Updates/Improvements 
 
 Add the following characteristics:
 
