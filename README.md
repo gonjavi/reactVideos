@@ -10,7 +10,6 @@ Este es un proyecto frontend para registrar videos, utilizando React y Redux. El
 - node 14.10.0
 
 
-
 ## Built with  - Construido con
 
 - React 17.0.1
@@ -22,6 +21,10 @@ Este es un proyecto frontend para registrar videos, utilizando React y Redux. El
 Add the following characteristics:
 
 - Style the app
+
+## Live Demo 
+
+[Live Demo](https://videos-react-gon.herokuapp.com/)
 
 
 ## Autor:
