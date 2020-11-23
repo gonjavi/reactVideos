@@ -2,12 +2,13 @@ import VideosList from './components/VideosList';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import EditVideo from "./components/EditVideo";
 import RegisterVideo from './components/RegisterVideo';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-    <h1>Videos</h1>
     <BrowserRouter>
+      <NavBar />
       <Switch>
         <Route exact path="/"  component={VideosList} />
         <Route path="/edit/:id" component={EditVideo} />

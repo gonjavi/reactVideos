@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NavLink } from 'react-router-dom';
-import DeleteVideoApi from '../actions/DeleteVideo'
+import DeleteVideoApi from '../actions/DeleteVideo';
+import Button from 'react-bootstrap/Button';
 
 const Video = (props) => {
   const { title, description, url, year, author } = props.data;
@@ -26,8 +27,8 @@ const Video = (props) => {
               edit: {
                 video: props.data
               }
-            }}><button>Edit</button></NavLink></td>
-          <td><button onClick={DeleteVideo}>Delete</button></td>
+            }}><Button variant="secondary">Edit</Button>{' '}</NavLink></td>
+          <td><Button variant="info" onClick={DeleteVideo}>Delete</Button>{' '}</td>
         </tr>
       </tbody>    
   );

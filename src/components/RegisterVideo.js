@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { NavLink } from 'react-router-dom';
 
 const RegisterVideo = props => {
   const [title, setTitle] = useState('');
@@ -31,8 +30,8 @@ const RegisterVideo = props => {
     displayError = <div>{error}</div>;
   }
   return (
-    <div>
-      <NavLink to="/">Home</NavLink>
+    <div className="container">
+      
       <h1>Register New Video</h1>
       {/* {displayError} */}
       <div>

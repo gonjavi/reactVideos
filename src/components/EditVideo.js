@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 
 const EditVideo = props => {
@@ -35,8 +34,7 @@ const EditVideo = props => {
 
 
   return (
-    <div>
-      <NavLink to="/">Home</NavLink>
+    <div className="container">     
         <form onSubmit={(e) => submitHandler(id, title, description, url, year, author)}>
           <label>
             Title:

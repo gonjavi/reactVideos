@@ -30,15 +30,21 @@ class VideosList extends Component {
   render() {
     const { datos } = this.state;
     const videos = datos.map((video) => (
-      <Video key={video.id} id={video.id} data={video.attributes} />
+      <Video 
+        key={video.id} 
+        id={video.id} 
+        data={video.attributes}
+         className="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+      />
     ));
     return (
-      <div>
+      <div className="container">
         <div>
           <button>
              <NavLink to="new">Register New Video</NavLink>
-            </button>
-          </div>
+          </button>
+        </div>
+        
         <table>
           <thead>
             <tr>
