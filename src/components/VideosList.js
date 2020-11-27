@@ -23,10 +23,6 @@ class VideosList extends Component {
       });
   }
 
-  RegisterVideo(){
-
-  }
-
   render() {
     const { datos } = this.state;
     const videos = datos.map((video) => (

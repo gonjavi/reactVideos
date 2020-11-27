@@ -21,8 +21,7 @@ const RegisterVideo = props => {
       });
       props.history.push('/');
     } catch (err) {
-      setError(err);
-      console.log(error)
+      setError(err);      
     }
   }
   let displayError;

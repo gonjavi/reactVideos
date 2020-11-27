@@ -68,7 +68,6 @@ EditVideo.propTypes = {
       id: PropTypes.string.isRequired,
     }),
   }).isRequired,
- // video: PropTypes.objectOf(PropTypes.any),
 };
 
 export default EditVideo;
