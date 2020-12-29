@@ -37,7 +37,7 @@ Add the following characteristics:
 
 Contribuciones, problemas y solicitud de caracteristicas son bienvenidas!
 
-## Muestra tu apoyo
+## Show your support - Muestra tu apoyo
 
 Da una ⭐️ si te gusta el proyecto!
 
