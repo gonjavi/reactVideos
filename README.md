@@ -27,7 +27,7 @@ Add the following characteristics:
 [Live Demo](https://videos-react-gon.herokuapp.com/)
 
 
-## Autor:
+## Author:
 👤 **Gonza Javier Mancilla**
 
 - Github: [@gonjavi](https://github.com/gonjavi)
