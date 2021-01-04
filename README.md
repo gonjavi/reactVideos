@@ -26,7 +26,6 @@ Add the following characteristics:
 
 [Live Demo](https://videos-react-gon.herokuapp.com/)
 
-
 ## Author:
 👤 **Gonza Javier Mancilla**
 
