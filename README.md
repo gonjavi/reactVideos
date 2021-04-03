@@ -1,6 +1,6 @@
 # ReactVideos
 
-This is a frontend project to register videos, using React and Redux. It allows all the CRUD actions,create, read, update and delete all the properties of a video (title, description, url, date and author).
+This is a frontend project to register videos, using React. It allows all the CRUD actions,create, read, update and delete all the properties of a video (title, description, url, date and author).
 
 Este es un proyecto frontend para registrar videos, utilizando React y Redux. El proyecto permite todas las acciones del CRUD, crear, consultar, actualizar y borrar lo relacionado con el video (titulo, descripción, url, fecha y autor).
 
@@ -13,7 +13,6 @@ Este es un proyecto frontend para registrar videos, utilizando React y Redux. El
 ## Built with  
 
 - React 17.0.1
-- Redux 4.0.5
 - Visual Code
 
 ## Future Updates/Improvements 
@@ -26,8 +25,7 @@ Add the following characteristics:
 
 [Live Demo](https://videos-react-gon.herokuapp.com/)
 
-
-## Autor:
+## Author:
 👤 **Gonza Javier Mancilla**
 
 - Github: [@gonjavi](https://github.com/gonjavi)
@@ -44,4 +42,3 @@ Da una ⭐️ si te gusta el proyecto!
 ## 📝 Licencia
 
 Este proyecto tiene licencia [MIT](lic.url).
-
