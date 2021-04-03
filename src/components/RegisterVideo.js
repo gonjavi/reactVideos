@@ -24,9 +24,9 @@ const RegisterVideo = props => {
       setError(err);      
     }
   }
-  let displayError;
+  
   if (error) {
-    displayError = <div>{error}</div>;
+    return <div>{error}</div>;
   }
   return (
     <div className="container">

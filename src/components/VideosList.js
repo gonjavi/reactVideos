@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import Video from "./Video";
 import { NavLink } from 'react-router-dom';
+import Table from 'react-bootstrap/Table'
 
 class VideosList extends Component {
   constructor(props) {
@@ -36,21 +37,25 @@ class VideosList extends Component {
     return (
       <div className="container">
         <div>
-          <button>
+          <button className="mt-3">
              <NavLink to="new">Register New Video</NavLink>
           </button>
         </div>
         
-        <table>
+        <Table striped bordered hover className="mt-3 text-center">
           <thead>
             <tr>
-              <th>Title</th>
-              <th>Description</th>
-              <th>Url</th>
+              <th>TITLE</th>
+              <th>DESCRIPTION</th>
+              <th>URL</th>
+              <th>AUTHOR</th>
+              <th>DATE</th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           {videos}
-        </table>
+        </Table>
       </div>
     );
   }
